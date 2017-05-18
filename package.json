@@ -44,7 +44,8 @@
   },
   "homepage": "https://github.com/sebastian-software/edgeapp#readme",
   "dependencies": {
-    "edgestack": "^0.18.0"
+    "edgestack": "^0.18.0",
+    "sanitize.css": "^5.0.0"
   },
   "devDependencies": {
     "identity-obj-proxy": "^3.0.0",

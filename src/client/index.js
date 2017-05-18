@@ -3,10 +3,10 @@ import {
   createReduxStore, createRootReducer,
   createApolloClient,
   renderApp
-} from "../client"
+} from "edgestack"
 
-import Root from "../app/Root"
-import State from "../app/State"
+import Root from "Root"
+import State from "State"
 
 
 
@@ -55,15 +55,15 @@ if (process.env.NODE_ENV === "development" && module.hot)
   module.hot.accept("./index")
 
   // Any changes to our App will cause a hotload re-render.
-  module.hot.accept("../app/Root", () =>
+  module.hot.accept("../Root", () =>
   {
-    const nextRoot = require("../app/Root").default
+    const nextRoot = require("../Root").default
     renderApp(nextRoot, { apolloClient, reduxStore })
   })
 
-  module.hot.accept("../app/State", () =>
+  module.hot.accept("../State", () =>
   {
-    const nextState = require("../app/State").default
+    const nextState = require("../State").default
     const nextRootReducer = createRootReducer(nextState.getReducers())
 
     reduxStore.replaceReducer(nextRootReducer)

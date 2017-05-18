@@ -4,11 +4,11 @@ import {
   createUniversalMiddleware,
   addFallbackHandler,
   enableEnhancedStackTraces
-} from "../server"
+} from "edgestack"
 
-import Root from "../app/Root"
-import State from "../app/State"
-import Config from "../app/Config.yml"
+import Root from "Root"
+import State from "State"
+import Config from "Config.yml"
 
 
 /*
