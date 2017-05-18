@@ -6,13 +6,45 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": ">=6.0.0",
+    "yarn": ">=0.23.0",
+    "npm": ">=4.0.0"
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.css": "stylelint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastian-software/edgeapp.git"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/FileMock.js",
+      "\\.(css)$": "identity-obj-proxy"
+    }
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Sebastian Software",
+    "email": "s.werner@sebastian-software.de",
+    "url": "sebastian-software.de"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastian-software/edgeapp/issues"
+  },
+  "homepage": "https://github.com/sebastian-software/edgeapp#readme",
   "dependencies": {
     "edgestack": "^0.18.0"
   },
   "devDependencies": {
+    "identity-obj-proxy": "^3.0.0",
     "readable-code": "^2.2.0"
   }
 }
