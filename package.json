@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "edgestack": "^0.18.0"
+  },
+  "devDependencies": {
+    "readable-code": "^2.2.0"
+  }
 }
