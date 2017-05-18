@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node bin/edge start",
-    "prod": "node bin/edge build",
+    "start": "edge start",
+    "prod": "edge build",
     "prod:start": "npm run prod && node build/server/main.js",
     "clean": "rimraf build/client/* build/server/*"
   },
