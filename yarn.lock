@@ -408,7 +408,7 @@ autoprefixer@^6.0.0, autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
-autoprefixer@^7.0.1:
+autoprefixer@^7.0.1, autoprefixer@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.1.tgz#97bc854c7d0b979f8d6489de547a0d17fb307f6d"
   dependencies:
@@ -1926,7 +1926,7 @@ color@^0.11.0:
     color-convert "^1.3.0"
     color-string "^0.3.0"
 
-color@^1.0.2:
+color@^1.0.2, color@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/color/-/color-1.0.3.tgz#e48e832d85f14ef694fb468811c2d5cfe729b55d"
   dependencies:
@@ -2188,7 +2188,7 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
 
-css-color-function@^1.2.0:
+css-color-function@^1.2.0, css-color-function@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/css-color-function/-/css-color-function-1.3.0.tgz#72c767baf978f01b8a8a94f42f17ba5d22a776fc"
   dependencies:
@@ -2675,6 +2675,47 @@ ecc-jsbn@~0.1.1:
   resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
   dependencies:
     jsbn "~0.1.0"
+
+edgecss@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/edgecss/-/edgecss-0.3.2.tgz#335a364f84a5f0e63b8cfb2c61cbdd989faddba5"
+  dependencies:
+    autoprefixer "^7.1.1"
+    lost "^8.0.0"
+    pleeease-filters "^4.0.0"
+    postcss "^6.0.1"
+    postcss-advanced-variables "^1.2.2"
+    postcss-assets "^4.1.0"
+    postcss-at-warn "^1.0.0"
+    postcss-calc "^6.0.0"
+    postcss-clearfix "^1.0.0"
+    postcss-color-function "^4.0.0"
+    postcss-color-hex-alpha "^3.0.0"
+    postcss-csso "^2.0.0"
+    postcss-custom-media "^6.0.0"
+    postcss-devtools "^1.1.1"
+    postcss-discard-comments "^2.0.4"
+    postcss-easings "^1.0.0"
+    postcss-flexbugs-fixes "^3.0.0"
+    postcss-font-family-system-ui "^2.0.1"
+    postcss-gradient-transparency-fix "^1.0.3"
+    postcss-grid-kiss "^1.3.1"
+    postcss-hexrgba "^0.2.1"
+    postcss-input-style "^0.3.0"
+    postcss-magic-animations "^0.3.0"
+    postcss-media-minmax "^3.0.0"
+    postcss-nested "^2.0.2"
+    postcss-pseudoelements "^4.0.0"
+    postcss-reporter "^3.0.0"
+    postcss-responsive-type "^0.5.1"
+    postcss-sassy-mixins "^2.0.0"
+    postcss-selector-matches "^3.0.1"
+    postcss-simple-url "^0.1.6"
+    postcss-smart-import "^0.7.0"
+    postcss-transform-shortcut "^2.0.1"
+    postcss-unicode-characters "^1.0.1"
+    postcss-will-change "^2.0.0"
+    postcss-zindex "^2.2.0"
 
 edgestack@^0.18.0:
   version "0.18.0"
@@ -6820,12 +6861,29 @@ postcss-color-function@^3.0.0:
     postcss-message-helpers "^2.0.0"
     postcss-value-parser "^3.3.0"
 
+postcss-color-function@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-color-function/-/postcss-color-function-4.0.0.tgz#7e0106f4f6a1ecb1ad5b3a8553ace5e828aae187"
+  dependencies:
+    css-color-function "^1.3.0"
+    postcss "^6.0.1"
+    postcss-message-helpers "^2.0.0"
+    postcss-value-parser "^3.3.0"
+
 postcss-color-hex-alpha@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/postcss-color-hex-alpha/-/postcss-color-hex-alpha-2.0.0.tgz#44fd6ecade66028648c881cb6504cdcbfdc6cd09"
   dependencies:
     color "^0.10.1"
     postcss "^5.0.4"
+    postcss-message-helpers "^2.0.0"
+
+postcss-color-hex-alpha@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-color-hex-alpha/-/postcss-color-hex-alpha-3.0.0.tgz#1e53e6c8acb237955e8fd08b7ecdb1b8b8309f95"
+  dependencies:
+    color "^1.0.3"
+    postcss "^6.0.1"
     postcss-message-helpers "^2.0.0"
 
 postcss-colormin@^2.1.8:
@@ -6855,6 +6913,12 @@ postcss-custom-media@^5.0.1:
   resolved "https://registry.yarnpkg.com/postcss-custom-media/-/postcss-custom-media-5.0.1.tgz#138d25a184bf2eb54de12d55a6c01c30a9d8bd81"
   dependencies:
     postcss "^5.0.0"
+
+postcss-custom-media@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-custom-media/-/postcss-custom-media-6.0.0.tgz#be532784110ecb295044fb5395a18006eb21a737"
+  dependencies:
+    postcss "^6.0.1"
 
 postcss-devtools@^1.1.1:
   version "1.1.1"
@@ -6918,6 +6982,12 @@ postcss-flexbugs-fixes@^2.1.1:
   resolved "https://registry.yarnpkg.com/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-2.1.1.tgz#5fa40080ba216d398e41228be2765282f2060d8d"
   dependencies:
     postcss "^5.0.0"
+
+postcss-flexbugs-fixes@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-3.0.0.tgz#7b31cb6c27d0417a35a67914c295f83c403c7ed4"
+  dependencies:
+    postcss "^6.0.1"
 
 postcss-font-family-system-ui@^2.0.1:
   version "2.0.1"
@@ -7020,6 +7090,12 @@ postcss-media-minmax@^2.1.2:
   resolved "https://registry.yarnpkg.com/postcss-media-minmax/-/postcss-media-minmax-2.1.2.tgz#444c5cf8926ab5e4fd8a2509e9297e751649cdf8"
   dependencies:
     postcss "^5.0.4"
+
+postcss-media-minmax@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-media-minmax/-/postcss-media-minmax-3.0.0.tgz#675256037a43ef40bc4f0760bfd06d4dc69d48d2"
+  dependencies:
+    postcss "^6.0.1"
 
 postcss-media-query-parser@^0.2.0, postcss-media-query-parser@^0.2.3:
   version "0.2.3"
@@ -7245,6 +7321,13 @@ postcss-selector-matches@^2.0.5:
   dependencies:
     balanced-match "^0.4.2"
     postcss "^5.0.0"
+
+postcss-selector-matches@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-selector-matches/-/postcss-selector-matches-3.0.1.tgz#e5634011e13950881861bbdd58c2d0111ffc96ab"
+  dependencies:
+    balanced-match "^0.4.2"
+    postcss "^6.0.1"
 
 postcss-selector-parser@^2.0.0, postcss-selector-parser@^2.1.1, postcss-selector-parser@^2.2.2:
   version "2.2.3"
