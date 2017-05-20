@@ -1,1 +1,1 @@
-import "edgecss/postcss.config.js"
+module.exports = require("edgecss/postcss.config.js")
