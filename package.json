@@ -7,7 +7,10 @@
     "start": "edge start",
     "prod": "edge build",
     "prod:start": "npm run prod && node build/server/main.js",
-    "clean": "rimraf build/client/* build/server/*"
+    "clean": "rimraf build/client/* build/server/*",
+    "release": "release-it --github.release --npm.publish --non-interactive",
+    "release:minor": "release-it --github.release --npm.publish --non-interactive --increment minor",
+    "release:major": "release-it --github.release --npm.publish --non-interactive --increment major"
   },
   "engines": {
     "node": ">=6.0.0",
@@ -51,6 +54,7 @@
   },
   "devDependencies": {
     "identity-obj-proxy": "^3.0.0",
+    "lint-staged": "^3.4.2",
     "readable-code": "^2.2.0"
   }
 }
