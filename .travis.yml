@@ -1,26 +1,23 @@
 language: node_js
-
 node_js:
-  - 6
-  - 7
-
+- 6
+- 7
 matrix:
   fast_finish: true
-
 env:
-  - CXX=g++-4.8
-
+- CXX=g++-4.8
 before_install:
-  - npm install -g npm@5
-  - npm --version
-
+- npm install -g npm@5
+- npm --version
 install:
-  - cp -f .env.example .env
-  - npm install
-
+- cp -f .env.example .env
+- npm install
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+    - g++-4.8
+notifications:
+  slack:
+    secure: CXZwxlYPEIQnU5ZvklpDss+HaHCMUTnEC4OdOD6DZqsdriu3ix1Ik0RmEywDJky9lo47FaY2VgyBAVc3RyY59vBM6xlCsfjkab+A+VgeYmTaXk7TjsKBisR/SH6rbJxNDWjitbqtWEyVnziWsnxiXcXbFidzO5th9mdN/w5MsLyqeOCAjQK4MhNdB1wN2NtRQlIBhCU7jevlDSVN1o37lSGDe65+dV34ZLfyD/+y+Byao138o2x8DlVE5MJwbYjSiHneAdEFlDR6dY7Ch+GiHcruxrtXhKjq1K0EsOMMEvwx7pSCaOnvuycGdAxSBywnjLDzGxPnCnkKVV+/wHYG5/Mshsy4cUR+XZsy3dy3Dyae7aFFYmiOBI+2GHuHCgx3F8NIxL0ebODn8NRjIJ8s4EIOUYuSFLl6PbMSQg/NP965vHsQzBnwcsYG/MhhFILXsDKKGTYWaGR5R80BDFhbe7EWDno+AbMkrNRaTgxCqd2B4efCIzbe8WHgXqs+xQVgOIppOrTQpawrc4IzDemvEASyYaVGqFhS3oWUt/BTDvRdNL+qFMLFOjwrND+c06O6CumWtQfczV4kkCPmGMccsgCP8+qywmfLhR3zfLk+Zbr2qMXsC54Qpud2nsiYsKbrDmmNQGiA0FWI11LIN20TVffqJmuHIOrsC6EtYbE+j8A=
