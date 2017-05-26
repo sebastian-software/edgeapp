@@ -10,9 +10,6 @@ matrix:
 env:
   - CXX=g++-4.8
 
-cache:
-  yarn: true
-
 before_install:
   - npm install -g npm@5
 
