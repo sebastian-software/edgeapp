@@ -9,9 +9,7 @@ function Missing({ staticContext }) {
     staticContext.status = 404
   }
 
-  return (
-    <div>Sorry, that page was not found.</div>
-  )
+  return <div>Sorry, that page was not found.</div>
 }
 
 Missing.propTypes = {

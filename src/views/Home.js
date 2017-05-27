@@ -10,7 +10,7 @@ console.log("Loading GraphQL queries works:", Tweets.kind === "Document")
 function Home({ intl }) {
   return (
     <article>
-      <Helmet title={intl.formatMessage({ id: "title" })}/>
+      <Helmet title={intl.formatMessage({ id: "title" })} />
       <div className={Styles.preloader} />
       <p>
         Home Component

@@ -38,12 +38,12 @@ class About extends React.Component {
 
     return (
       <article>
-        <Helmet title={intl.formatMessage({ id: "title" })}/>
+        <Helmet title={intl.formatMessage({ id: "title" })} />
         <p>
-          <FormattedMessage id="counter" values={{ value: this.props.value }}/>
+          <FormattedMessage id="counter" values={{ value: this.props.value }} />
         </p>
         <p>
-          <FormattedMessage id="infoPi" values={{ pi: 3.14159265359 }}/>
+          <FormattedMessage id="infoPi" values={{ pi: 3.14159265359 }} />
         </p>
 
         <p>

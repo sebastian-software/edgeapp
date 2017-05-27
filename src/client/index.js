@@ -19,15 +19,13 @@ import State from "State"
 let apolloClient
 let reduxStore
 
-Promise.all([
-  ensureIntlSupport(window.APP_STATE.ssr.locale),
-  ensureReactIntlSupport(window.APP_STATE.ssr.language)
-])
-  .then((results) =>
-  {
-    apolloClient = createApolloClient({
-      initialState: window.APP_STATE
-    })
+Promise
+  .all([
+    ensureIntlSupport(window.APP_STATE.ssr.locale),
+    ensureReactIntlSupport(window.APP_STATE.ssr.language)
+  ])
+  .then((results) => {
+    apolloClient = createApolloClient({ initialState: window.APP_STATE })
 
     reduxStore = createReduxStore({
       reducers: State.getReducers(),

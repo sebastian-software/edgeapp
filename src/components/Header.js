@@ -18,9 +18,8 @@ function Header({ intl }) {
           { name: "description", content: intl.formatMessage({ id: "app.description" }) }
         ]}
       />
-
-      <h1 className={Styles.title}><FormattedMessage id="app.title"/></h1>
-      <strong><FormattedMessage id="app.description"/></strong>
+      <h1 className={Styles.title}><FormattedMessage id="app.title" /></h1>
+      <strong><FormattedMessage id="app.description" /></strong>
     </header>
   )
 }

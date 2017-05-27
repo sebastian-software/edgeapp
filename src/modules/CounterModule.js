@@ -16,48 +16,38 @@ export function getCounter(state) {
  *
  * @param {number} value New value to set for the counter.
  */
-export function setCounter(value)
-{
-  return {
-    type: SET_COUNTER,
-    value
-  }
+export function setCounter(value) {
+  return { type: SET_COUNTER, value }
 }
 
 /**
  * Action creator for incrementing the counter value.
  */
-export function incrementCounter()
-{
-  return {
-    type: INCREMENT_COUNTER
-  }
+export function incrementCounter() {
+  return { type: INCREMENT_COUNTER }
 }
 
 /**
  * Action creator for decrementing the counter value.
  */
-export function decrementCounter()
-{
-  return {
-    type: DECREMENT_COUNTER
-  }
+export function decrementCounter() {
+  return { type: DECREMENT_COUNTER }
 }
 
 /**
  * This somewhat tries to emulate a asyncronous backend request.
  */
-function mockServerDelay()
-{
+function mockServerDelay() {
   console.log("Loading counter...")
-  return new Promise((resolve, reject) =>
-  {
-    setTimeout(() =>
-    {
-      let value = 1000 + Math.round(Math.random() * 8999)
-      console.log("Received counter:", value)
-      resolve(value)
-    }, 100)
+  return new Promise((resolve, reject) => {
+    setTimeout(
+      () => {
+        let value = 1000 + Math.round(Math.random() * 8999)
+        console.log("Received counter:", value)
+        resolve(value)
+      },
+      100,
+    )
   })
 }
 
@@ -68,9 +58,7 @@ export function loadCounter() {
   return (dispatch) => mockServerDelay().then((value) => dispatch(setCounter(value)))
 }
 
-const initialState = {
-  value: null
-}
+const initialState = { value: null }
 
 /**
  * Reducer for all counter relevant action types.
