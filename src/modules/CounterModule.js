@@ -3,14 +3,18 @@ export const INCREMENT_COUNTER = "counter/INCREMENT"
 export const DECREMENT_COUNTER = "counter/DECREMENT"
 
 /**
- * Selector for accessing the counter value from inside the global state
+ * Selector for accessing the counter value from inside the global state.
+ *
+ * @param {State} state Global Redux state.
  */
 export function getCounter(state) {
   return state.counter.value
 }
 
 /**
- * Action creator for setting the counter value
+ * Action creator for setting the counter value.
+ *
+ * @param {number} value New value to set for the counter.
  */
 export function setCounter(value)
 {
@@ -21,7 +25,7 @@ export function setCounter(value)
 }
 
 /**
- * Action creator for incrementing the counter value
+ * Action creator for incrementing the counter value.
  */
 export function incrementCounter()
 {
@@ -31,7 +35,7 @@ export function incrementCounter()
 }
 
 /**
- * Action creator for decrementing the counter value
+ * Action creator for decrementing the counter value.
  */
 export function decrementCounter()
 {
@@ -41,7 +45,7 @@ export function decrementCounter()
 }
 
 /**
- * This somewhat tries to emulate a asyncronous backend request
+ * This somewhat tries to emulate a asyncronous backend request.
  */
 function mockServerDelay()
 {
@@ -58,7 +62,7 @@ function mockServerDelay()
 }
 
 /**
- * Async data loading using redux-thunk
+ * Async data loading using redux-thunk.
  */
 export function loadCounter() {
   return (dispatch) => mockServerDelay().then((value) => dispatch(setCounter(value)))
@@ -69,7 +73,10 @@ const initialState = {
 }
 
 /**
- * Reducer for all counter relevant action types
+ * Reducer for all counter relevant action types.
+ *
+ * @param previousState Previous state object of this reducer.
+ * @param {string} action Action to process.
  */
 export function counterReducer(previousState = initialState, action)
 {
