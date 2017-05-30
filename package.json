@@ -56,6 +56,7 @@
   },
   "devDependencies": {
     "identity-obj-proxy": "^3.0.0",
+    "licensee": "^4.0.1",
     "lint-staged": "^3.5.1",
     "readable-code": "^2.3.1"
   }
