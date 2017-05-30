@@ -1,4 +1,4 @@
-import { counterReducer } from "./modules/CounterModule"
+import { counterReducer } from "./modules/Counter"
 
 export default {
   /**
