@@ -6,9 +6,9 @@ import { addDays } from "date-fns"
 import PropTypes from "prop-types"
 
 import Styles from "./About.css"
-import { getCounter, decrementCounter, incrementCounter, loadCounter } from "../modules/CounterModule"
+import { getCounter, decrementCounter, incrementCounter, loadCounter } from "../../modules/Counter"
 
-import MarkdownTest from "../components/Markdown.mdx"
+import MarkdownTest from "../../components/Markdown.mdx"
 import "prismjs/themes/prism-tomorrow.css"
 
 /**
