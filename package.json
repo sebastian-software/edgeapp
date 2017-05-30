@@ -48,14 +48,15 @@
   },
   "homepage": "https://github.com/sebastian-software/edgeapp#readme",
   "dependencies": {
-    "edgecss": "^0.4.4",
-    "edgestack": "^0.19.2",
+    "classnames": "^2.2.5",
+    "edgecss": "^0.4.5",
+    "edgestack": "^0.19.3",
     "sanitize.css": "^5.0.0",
     "source-sans-pro": "^2.0.10"
   },
   "devDependencies": {
     "identity-obj-proxy": "^3.0.0",
-    "lint-staged": "^3.5.0",
-    "readable-code": "^2.3.0"
+    "lint-staged": "^3.5.1",
+    "readable-code": "^2.3.1"
   }
 }
