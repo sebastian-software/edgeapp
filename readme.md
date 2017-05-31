@@ -1,7 +1,4 @@
-# Blueport Frontend
-
-Business Banking 2.0
-
+# Edge App
 
 ## Directory Structure
 
@@ -16,7 +13,7 @@ Business Banking 2.0
   - `messages`: Global application messages which are not specific to a view of the application like header, footer, etc.
   - `modules`: Redux modules following the Ducks pattern. Each module contains reducers, selectors and action creators in a single file. Should export all of them under their original names.
   - `server`: Entry point for server side application. Mostly not relevant during application development.
-  - `views`: Each route is connected to a view. Each view should be lazy loaded using our async component wrapper. A view is just a normal state-less component combining arbitrary other components and containers. 
+  - `views`: Each route is connected to a view. Each view should be lazy loaded using our async component wrapper. A view is just a normal state-less component combining arbitrary other components and containers.
 
 ## Technology Stack
 
@@ -53,14 +50,13 @@ Testing Framework. We use snapshot for all static components and unit tests for 
 More: [Homepage](https://facebook.github.io/jest/) | [Getting Started](https://facebook.github.io/jest/docs/getting-started.html)
 
 
-## Patterns
+## Conventions
 
 ### File Names
 
-Please name all assets (images, fonts, json) in lowercase aka kebap-case => `foo-bar-baz.svg`
+All assets (images, fonts, json) are named in lowercase aka kebap-case => `foo-bar-baz.svg`
 
-JS and CSS filenames should be camelcase. First character should only be uppercase when the file is exporting/defining a component/class.
-
+JavaScript and CSS filenames should be camelcase e.g. `defaultFonts.css`. First character should only be uppercase when the file is exporting/defining a component/class e.g. `MyComponent.css`.
 
 ### Prefer Stateless Components.
 
