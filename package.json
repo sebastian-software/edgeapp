@@ -11,7 +11,8 @@
     "test": "npm run prod",
     "release": "release-it --github.release --npm.publish --non-interactive",
     "release:minor": "release-it --github.release --npm.publish --non-interactive --increment minor",
-    "release:major": "release-it --github.release --npm.publish --non-interactive --increment major"
+    "release:major": "release-it --github.release --npm.publish --non-interactive --increment major",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "engines": {
     "node": ">=6.0.0",
