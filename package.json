@@ -12,7 +12,9 @@
     "release": "release-it --github.release --npm.publish --non-interactive",
     "release:minor": "release-it --github.release --npm.publish --non-interactive --increment minor",
     "release:major": "release-it --github.release --npm.publish --non-interactive --increment major",
-    "storybook": "cross-env start-storybook -p 9001 -c .storybook"
+    "storybook": "cross-env start-storybook -p 9001 -c .storybook",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "engines": {
     "node": ">=6.0.0",
@@ -70,6 +72,7 @@
     "jest-cli": "^20.0.4",
     "licensee": "^4.0.1",
     "lint-staged": "^3.5.1",
+    "react-styleguidist": "^5.3.2",
     "react-test-renderer": "^15.5.4",
     "readable-code": "^2.3.1"
   }

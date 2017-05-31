@@ -9,6 +9,7 @@
 - Redux Ducks pattern for a compact and easy to use Redux application structure.
 - Jest as a very capable test runner.
 - Storybook as a component demo browser with automatic snapshots for regression testing.
+- Styleguidist for displying a style guide for basic components.
 - Deeply supported localization with native `Intl` object and ICU based translations.
 - Lazy loading of routes based on React Router 4.
 
@@ -111,6 +112,15 @@ Component browser for all application components. Preconfigured to support Webpa
 Integrated with Jest Snapshot Testing so that every story is automatically snapshotted and compared to previous results.
 
 More: [Homepage](https://storybook.js.org/)
+
+
+### Styleguidist
+
+Kind of an alternative to Storybook with a slightly different focus. Excellent for documentation of properties and components themselve.
+
+Very Markdown oriented for writing tests and showcase the features of components.
+
+More: [Homepage](https://react-styleguidist.js.org)
 
 
 ## Conventions
