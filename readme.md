@@ -21,6 +21,31 @@
 TODO
 
 
+## NPM Commands
+
+### `npm run start`
+
+Starts a development server for both the client and server bundles. We use `react-hot-loader` v3 to power the hot reloading of the client bundle, whilst a filesystem watch is implemented to reload the server bundle when any changes have occurred.
+
+### `npm run prod`
+
+Builds the client and server bundles, with the output being production optimized.
+
+### `npm run prod:start`
+
+Executes the server. It expects you to have already built the bundles either via the `npm run build` command or manually.
+
+### `npm run clean`
+
+Deletes any build output that would have originated from the other commands.
+
+### `npm run storybook`
+
+Starts the Storybook demo browser.
+
+
+
+
 ## Technology Stack
 
 ### Edge Stack
@@ -147,3 +172,13 @@ function VerticalDock(props) {
   return <AbstractDock theme={theme} {...props}></AbstractDock>
 }
 ```
+
+
+
+## [License](license)
+
+## Copyright
+
+<img src="https://raw.githubusercontent.com/sebastian-software/readable-code/master/assets/sebastiansoftware.png" alt="Sebastian Software GmbH Logo" width="250" height="200"/>
+
+Copyright 2017<br/>[Sebastian Software GmbH](http://www.sebastian-software.de)
