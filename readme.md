@@ -1,24 +1,18 @@
 # Edge App
 
-## Directory Structure
 
-- `build`: Used for bundles during development and as an output folder for production.
-- `node_modules`: Installation folder for local NodeJS packages.
-- `public`: Static files which can be used untouched. Is used by both, production builds and during development.
-- `src`: Contains application source code
-  - `assets`: Global assets. Do not use for component or view specific assets.
-  - `client`: Entry point for client side application. Mostly not relevant during application development.
-  - `components`: Shared components between different views. Each component should have a folder named as the class itself e.g. `SelectBox` (camel-case). Component related assets, tests and sub components should be placed directly inside the folder. The components here should not know of any application specific things.
-  - `containers`: Containers are components which are connected to the application state. Either by loading specific data via fetch(), connecting to Redux or using the GraphQL data binding.
-  - `messages`: Global application messages which are not specific to a view of the application like header, footer, etc.
-  - `modules`: Redux modules following the Ducks pattern. Each module contains reducers, selectors and action creators in a single file. Should export all of them under their original names.
-  - `server`: Entry point for server side application. Mostly not relevant during application development.
-  - `views`: Each route is connected to a view. Each view should be lazy loaded using our async component wrapper. A view is just a normal state-less component combining arbitrary other components and containers.
+## Features
 
+- Webpack 2 for development and deployment.
+- PostCSS for advanced CSS+ features (think of Sass).
+- CSS modules for component isolation.
+- Redux Ducks pattern for a compact and easy to use Redux application structure.
+- Jest as a very capable test runner.
+- Storybook as a component demo browser with automatic snapshots for regression testing.
+- Deeply supported localization with native `Intl` object and ICU based translations.
+- Lazy loading of routes based on React Router 4.
 
-## Getting Started
-
-TODO
+And soooo much more...
 
 
 ## NPM Commands
@@ -42,6 +36,35 @@ Deletes any build output that would have originated from the other commands.
 ### `npm run storybook`
 
 Starts the Storybook demo browser.
+
+
+
+
+
+## Getting Started
+
+TODO
+
+
+
+
+
+## Directory Structure
+
+- `build`: Used for bundles during development and as an output folder for production.
+- `node_modules`: Installation folder for local NodeJS packages.
+- `public`: Static files which can be used untouched. Is used by both, production builds and during development.
+- `src`: Contains application source code
+  - `assets`: Global assets. Do not use for component or view specific assets.
+  - `client`: Entry point for client side application. Mostly not relevant during application development.
+  - `components`: Shared components between different views. Each component should have a folder named as the class itself e.g. `SelectBox` (camel-case). Component related assets, tests and sub components should be placed directly inside the folder. The components here should not know of any application specific things.
+  - `containers`: Containers are components which are connected to the application state. Either by loading specific data via fetch(), connecting to Redux or using the GraphQL data binding.
+  - `messages`: Global application messages which are not specific to a view of the application like header, footer, etc.
+  - `modules`: Redux modules following the Ducks pattern. Each module contains reducers, selectors and action creators in a single file. Should export all of them under their original names.
+  - `server`: Entry point for server side application. Mostly not relevant during application development.
+  - `views`: Each route is connected to a view. Each view should be lazy loaded using our async component wrapper. A view is just a normal state-less component combining arbitrary other components and containers.
+
+
 
 
 
