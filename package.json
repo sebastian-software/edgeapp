@@ -30,11 +30,12 @@
   },
   "jest": {
     "moduleFileExtensions": [
-      "js"
+      "js",
+      "mjs"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/FileMock.js",
-      "\\.(css)$": "identity-obj-proxy"
+      "\\.(jpg|jpeg|png|gif|webp|svg|eot|otf|ttf|woff|woff2)$": "<rootDir>/__mocks__/FileMock.js",
+      "\\.(css|sss|pcss)$": "identity-obj-proxy"
     }
   },
   "keywords": [],
