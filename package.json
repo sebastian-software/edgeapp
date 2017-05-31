@@ -22,7 +22,10 @@
   "pre-commit": "lint-staged",
   "lint-staged": {
     "*.js": "eslint",
-    "*.css": "stylelint"
+    "*.mjs": "eslint",
+    "*.css": "stylelint",
+    "*.pcss": "stylelint",
+    "*.sss": "stylelint"
   },
   "repository": {
     "type": "git",
@@ -31,7 +34,8 @@
   "jest": {
     "moduleFileExtensions": [
       "js",
-      "mjs"
+      "mjs",
+      "json"
     ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|webp|svg|eot|otf|ttf|woff|woff2)$": "<rootDir>/__mocks__/FileMock.js",

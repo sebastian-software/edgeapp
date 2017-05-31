@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Header Site Header 1`] = `
+<header
+  id="site-header"
+>
+  <h1
+    className="title"
+  >
+    <span>
+      Edge App
+    </span>
+  </h1>
+  <strong>
+    <span>
+      A boilerplate for your own application demonstrating the power of EdgeStack.
+    </span>
+  </strong>
+</header>
+`;
+
+exports[`Storyshots Navigation Site Navigation 1`] = `
+<ul
+  className="list"
+>
+  <li>
+    <a
+      className={undefined}
+      href="/"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Home
+    </a>
+  </li>
+  <li>
+    <a
+      className={undefined}
+      href="/about"
+      onClick={[Function]}
+      style={undefined}
+    >
+      About
+    </a>
+  </li>
+  <li>
+    <a
+      className={undefined}
+      href="/missing"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Missing
+    </a>
+  </li>
+</ul>
+`;
