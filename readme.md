@@ -15,6 +15,12 @@
   - `server`: Entry point for server side application. Mostly not relevant during application development.
   - `views`: Each route is connected to a view. Each view should be lazy loaded using our async component wrapper. A view is just a normal state-less component combining arbitrary other components and containers.
 
+
+## Getting Started
+
+TODO
+
+
 ## Technology Stack
 
 ### Edge Stack
