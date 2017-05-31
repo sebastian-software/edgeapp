@@ -1,4 +1,16 @@
-# Edge App
+# Edge App <br/>[![Sponsored by][sponsor-img]][sponsor] [![Version][npm-version-img]][npm] [![Downloads][npm-downloads-img]][npm] [![Build Status Unix][travis-img]][travis] [![Build Status Windows][appveyor-img]][appveyor] [![Dependencies][deps-img]][deps]
+
+[sponsor-img]: https://img.shields.io/badge/Sponsored%20by-Sebastian%20Software-692446.svg
+[sponsor]: https://www.sebastian-software.de
+[deps]: https://david-dm.org/sebastian-software/edgeapp
+[deps-img]: https://david-dm.org/sebastian-software/edgeapp.svg
+[npm]: https://www.npmjs.com/package/edgeapp
+[npm-downloads-img]: https://img.shields.io/npm/dm/edgeapp.svg
+[npm-version-img]: https://img.shields.io/npm/v/edgeapp.svg
+[travis-img]: https://img.shields.io/travis/sebastian-software/edgeapp/master.svg?branch=master&label=unix%20build
+[appveyor-img]: https://img.shields.io/appveyor/ci/swernerx/edgeapp/master.svg?label=windows%20build
+[travis]: https://travis-ci.org/sebastian-software/edgeapp
+[appveyor]: https://ci.appveyor.com/project/swernerx/edgeapp/branch/master
 
 
 ## Features
