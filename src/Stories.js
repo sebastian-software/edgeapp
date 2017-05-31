@@ -6,14 +6,14 @@ import { storiesOf, addDecorator } from "@storybook/react"
 
 // import { action } from "@storybook/addon-actions"
 
-import Header from "../src/components/Header"
-import Navigation from "../src/components/Navigation"
+import Header from "components/Header"
+import Navigation from "components/Navigation"
 
 import "sanitize.css"
-import "../src/Fonts.css"
-import "../src/Default.css"
+import "Fonts.css"
+import "Default.css"
 
-import messages from "../src/messages/en.json"
+import messages from "messages/en.json"
 
 addDecorator((story) => (
   <IntlProvider locale="en" messages={messages}>
