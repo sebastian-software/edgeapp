@@ -8,13 +8,9 @@ import { BrowserRouter } from "react-router-dom"
 import Header from "../src/components/Header"
 import Navigation from "../src/components/Navigation"
 
-storiesOf("Button", module)
-  .add("with text", () => (
-    <button onClick={action("clicked")}>Hello Button</button>
-  ))
-  .add("with some emoji", () => (
-    <button onClick={action("clicked")}>😀 😎 👍 💯</button>
-  ))
+import "sanitize.css"
+import "../src/Fonts.css"
+import "../src/Default.css"
 
 const messages = {
   "app.title": "Storybook Title",

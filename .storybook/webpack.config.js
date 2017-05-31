@@ -2,6 +2,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(eot|woff|woff2|ttf|otf|svg|png|jpg|jpeg|jp2|jpx|jxr|gif|webp|mp4|mp3|ogg|pdf|html)$/,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]"
+        }
+      },
+      {
         test: /\.css$/,
         loaders: [
           {
