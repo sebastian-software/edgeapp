@@ -63,6 +63,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "^3.0.0",
     "@storybook/addon-info": "^3.0.0",
+    "@storybook/addon-knobs": "^3.0.0",
     "@storybook/addon-storyshots": "^3.0.0",
     "@storybook/react": "^3.0.0",
     "cross-env": "^5.0.0",
