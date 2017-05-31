@@ -1,5 +1,5 @@
 {
-  "app.title": "Edge Stack",
-  "app.description": "A Universal React Stack with deeply integrated localization Support, semi-automatic route-based code splitting, Hot Module Reloading (HMR), Redux, Apollo GraphQL and more...",
+  "app.title": "Edge App",
+  "app.description": "A boilerplate for your own application demonstrating the power of EdgeStack.",
   "counter": "Zähler: {value, number}"
 }
