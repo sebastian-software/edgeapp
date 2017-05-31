@@ -55,6 +55,7 @@
     "source-sans-pro": "^2.0.10"
   },
   "devDependencies": {
+    "@storybook/react": "^3.0.0",
     "identity-obj-proxy": "^3.0.0",
     "licensee": "^4.0.1",
     "lint-staged": "^3.5.1",
