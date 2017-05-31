@@ -13,10 +13,7 @@ import "sanitize.css"
 import "../src/Fonts.css"
 import "../src/Default.css"
 
-const messages = {
-  "app.title": "Storybook Title",
-  "app.description": "Storybook Description"
-}
+import messages from "../src/messages/en.json"
 
 addDecorator((story) => (
   <IntlProvider locale="en" messages={messages}>
