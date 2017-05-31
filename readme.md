@@ -50,6 +50,15 @@ Testing Framework. We use snapshot for all static components and unit tests for 
 More: [Homepage](https://facebook.github.io/jest/) | [Getting Started](https://facebook.github.io/jest/docs/getting-started.html)
 
 
+### Storybook
+
+Component browser for all application components. Preconfigured to support Webpack assets (fonts, images) like EdgeStack and CSS modules.
+
+Integrated with Jest Snapshot Testing so that every story is automatically snapshotted and compared to previous results.
+
+More: [Homepage](https://storybook.js.org/)
+
+
 ## Conventions
 
 ### File Names
