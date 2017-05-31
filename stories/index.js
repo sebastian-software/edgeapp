@@ -1,9 +1,10 @@
 import React from "react"
-import { storiesOf } from "@storybook/react"
-import { action } from "@storybook/addon-actions"
-
 import { IntlProvider } from "react-intl"
 import { BrowserRouter } from "react-router-dom"
+
+import { storiesOf, addDecorator } from "@storybook/react"
+
+// import { action } from "@storybook/addon-actions"
 
 import Header from "../src/components/Header"
 import Navigation from "../src/components/Navigation"
@@ -17,18 +18,20 @@ const messages = {
   "app.description": "Storybook Description"
 }
 
+addDecorator((story) => (
+  <IntlProvider locale="en" messages={messages}>
+    <BrowserRouter>
+      {story()}
+    </BrowserRouter>
+  </IntlProvider>
+))
+
 storiesOf("Header", module)
   .add("Site Header", () => (
-    <IntlProvider locale="en" messages={messages}>
-      <Header/>
-    </IntlProvider>
+    <Header/>
   ))
 
 storiesOf("Navigation", module)
   .add("Site Navigation", () => (
-    <IntlProvider locale="en" messages={messages}>
-      <BrowserRouter>
-        <Navigation/>
-      </BrowserRouter>
-    </IntlProvider>
+    <Navigation/>
   ))
