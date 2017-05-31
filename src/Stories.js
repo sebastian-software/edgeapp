@@ -24,11 +24,11 @@ addDecorator((story) => (
 ))
 
 storiesOf("Header", module)
-  .add("Site Header", () => (
+  .addWithInfo("Site Header", "This is our application header", () => (
     <Header/>
-  ))
+  ), { inline: true })
 
 storiesOf("Navigation", module)
-  .add("Site Navigation", () => (
+  .addWithInfo("Site Navigation", "This renders our site navigation bar. It's super simple.", () => (
     <Navigation/>
-  ))
+  ), { inline: true })
