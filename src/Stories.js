@@ -32,11 +32,11 @@ addDecorator(withKnobs)
 addDecorator(withRoutingAndIntl)
 
 storiesOf("Header", module)
-  .addWithInfo("Site Header", "This is our application header", () => (
+  .add("Site Header", () => (
     <Header/>
-  ), { inline: true })
+  ))
 
 storiesOf("Navigation", module)
-  .addWithInfo("Site Navigation", "This renders our site navigation bar. It's super simple.", () => (
+  .add("Site Navigation", () => (
     <Navigation/>
-  ), { inline: true })
+  ))
