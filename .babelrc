@@ -1,9 +1,18 @@
 {
-  presets: [ "env" ],
+  presets: [
+    [ "env", {
+      "targets": {
+        "browsers": ["last 2 versions"],
+        "node": "current"
+      }
+    }],
+    "react"
+  ],
 
   plugins: [
     [ "module-resolver", {
       root: [ "src" ]
-    }]
+    }],
+    [ "transform-object-rest-spread", { useBuiltIns: true }]
   ]
 }
