@@ -534,10 +534,6 @@ ast-types@0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.9.0.tgz#c8721c8747ae4d5b29b929e99c5317b4e8745623"
 
-ast-types@0.9.6:
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.9.6.tgz#102c9e9e9005d3e7e3829bf0c4fa24ee862ee9b9"
-
 ast-types@0.9.8:
   version "0.9.8"
   resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.9.8.tgz#6cb6a40beba31f49f20928e28439fc14a3dab078"
@@ -1705,8 +1701,8 @@ babylon@7.0.0-beta.8:
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-7.0.0-beta.8.tgz#2bdc5ae366041442c27e068cce6f0d7c06ea9949"
 
 babylon@^6.11.0, babylon@^6.13.0, babylon@^6.15.0, babylon@^6.17.0:
-  version "6.17.1"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.1.tgz#17f14fddf361b695981fe679385e4f1c01ebd86f"
+  version "6.17.2"
+  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.2.tgz#201d25ef5f892c41bae49488b08db0dd476e9f5c"
 
 babylon@~5.8.3:
   version "5.8.38"
@@ -3129,7 +3125,7 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-edgecss@^0.4.5:
+edgecss@^0.4.6:
   version "0.4.6"
   resolved "https://registry.yarnpkg.com/edgecss/-/edgecss-0.4.6.tgz#28b3be7128cdd6cabae211dda443a1d978d290f3"
   dependencies:
@@ -3169,7 +3165,7 @@ edgecss@^0.4.5:
     postcss-will-change "^2.0.0"
     postcss-zindex "^2.2.0"
 
-edgestack@^0.19.3:
+edgestack@^0.19.4:
   version "0.19.4"
   resolved "https://registry.yarnpkg.com/edgestack/-/edgestack-0.19.4.tgz#afca34a8e401402d120d40f01c5db26cf7d5bce5"
   dependencies:
@@ -3386,8 +3382,8 @@ es-to-primitive@^1.1.1:
     is-symbol "^1.0.1"
 
 es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
-  version "0.10.21"
-  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.21.tgz#19a725f9e51d0300bbc1e8e821109fd9daf55925"
+  version "0.10.22"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.22.tgz#1876c51f990769c112c781ea3ebe89f84fd39071"
   dependencies:
     es6-iterator "2"
     es6-symbol "~3.1"
@@ -3687,7 +3683,7 @@ esprima@^2.1.0, esprima@^2.6.0, esprima@^2.7.1, esprima@~2.7.1:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
-esprima@^3.1.1, esprima@~3.1.0:
+esprima@^3.1.1:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
 
@@ -4996,8 +4992,8 @@ ignore@^3.0.11, ignore@^3.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.3.tgz#432352e57accd87ab3110e82d3fea0e47812156d"
 
 iltorb@^1.0.9:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/iltorb/-/iltorb-1.3.0.tgz#b9ab2711d7fe7c7492e36c03b6e907dfdf6da58c"
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/iltorb/-/iltorb-1.3.1.tgz#47270458ec6837c422c26c9282f00e63196e95f9"
   dependencies:
     nan "^2.6.1"
     node-pre-gyp "^0.6.34"
@@ -6081,9 +6077,9 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lint-staged@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-3.5.1.tgz#a9a2b0c161b436f8dce4bb27265e34d97a56ed82"
+lint-staged@^3.5.1, lint-staged@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-3.6.0.tgz#cda8f0bef16e7928cc14b735186ae12cd662599c"
   dependencies:
     app-root-path "^2.0.0"
     cosmiconfig "^1.1.0"
@@ -8393,8 +8389,8 @@ react-codemirror@^1.0.0:
     prop-types "^15.5.4"
 
 react-color@^2.11.4:
-  version "2.11.7"
-  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.11.7.tgz#746465b75feda63c2567607dfbcb276fc954a5b7"
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.12.0.tgz#54bf93e51bb8dc2c76282ac127f85b34b86cd734"
   dependencies:
     lodash "^4.0.1"
     material-colors "^1.2.1"
@@ -8779,7 +8775,7 @@ read@1.0.x:
   dependencies:
     mute-stream "~0.0.4"
 
-readable-code@^2.3.1:
+readable-code@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/readable-code/-/readable-code-2.3.3.tgz#3564c2f88bcd7f4613e3e6bafbd16a590968a0f8"
   dependencies:
@@ -8878,21 +8874,12 @@ readline2@^1.0.1:
     is-fullwidth-code-point "^1.0.0"
     mute-stream "0.0.5"
 
-recast@0.11.12:
+recast@0.11.12, recast@^0.11.5:
   version "0.11.12"
   resolved "https://registry.yarnpkg.com/recast/-/recast-0.11.12.tgz#a79e4d3f82d5d72a82ee177aeaa791e793bbe5d6"
   dependencies:
     ast-types "0.9.0"
     esprima "~2.7.1"
-    private "~0.1.5"
-    source-map "~0.5.0"
-
-recast@^0.11.5:
-  version "0.11.23"
-  resolved "https://registry.yarnpkg.com/recast/-/recast-0.11.23.tgz#451fd3004ab1e4df9b4e4b66376b2a21912462d3"
-  dependencies:
-    ast-types "0.9.6"
-    esprima "~3.1.0"
     private "~0.1.5"
     source-map "~0.5.0"
 
@@ -10276,8 +10263,8 @@ uc.micro@^1.0.1, uc.micro@^1.0.3:
   resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.3.tgz#7ed50d5e0f9a9fb0a573379259f2a77458d50192"
 
 uglify-js@3.0.x:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.0.14.tgz#2697af126fd215aac556facb1edfb17875204760"
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.0.15.tgz#aacb323a846b234602270dead8a32441a8806f42"
   dependencies:
     commander "~2.9.0"
     source-map "~0.5.1"
