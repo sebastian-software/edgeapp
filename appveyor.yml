@@ -5,10 +5,9 @@ clone_depth: 10
 environment:
   matrix:
     - nodejs_version: 6
-    - nodejs_version: 7
+    - nodejs_version: 8
 
 platform:
-  - x86
   - x64
 
 matrix:
@@ -21,14 +20,16 @@ deploy: off
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - ps: Copy-Item .env.example .env
-  - IF "%platform%" == "x64" CALL "%VS140COMNTOOLS%..\..\VC\vcvarsall.bat" amd64
-  - IF "%platform%" == "x86" CALL "%VS140COMNTOOLS%..\..\VC\vcvarsall.bat" x86
-  # - npm install -g npm@5
-  # - npm --version
+  - CALL "%VS140COMNTOOLS%..\..\VC\vcvarsall.bat" amd64
   - yarn install
 
 test_script:
   - npm test
+
+notifications:
+  - provider: Slack
+    incoming_webhook:
+      secure: 42qYgf76P/QjYb5QJ18gFFJ67iTlXc1QzEva9BFofwh5KzpF/QJ/pvRark1i3aux6uwL53zdDKTjXfy8Ozpqqk9DhnU5M1oA96bQYWOnmZU=
 
 cache:
   # global npm cache
