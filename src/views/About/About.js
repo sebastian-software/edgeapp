@@ -1,8 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { connect } from "react-redux"
-import { FormattedDate, FormattedMessage, FormattedRelative } from "react-intl"
-import { addDays } from "date-fns"
 import PropTypes from "prop-types"
 
 import Styles from "./About.css"
@@ -34,31 +32,12 @@ class About extends React.Component {
   }
 
   render() {
-    const { intl } = this.props
-
     return (
       <article>
-        <Helmet title={intl.formatMessage({ id: "title" })} />
-        <p>
-          <FormattedMessage id="counter" values={{ value: this.props.value }} />
-        </p>
-        <p>
-          <FormattedMessage id="infoPi" values={{ pi: 3.14159265359 }} />
-        </p>
+        <Helmet title="About" />
 
         <p>
-          Today: <br/>
-          <FormattedDate
-            value={Date.now()}
-            year="numeric"
-            month="long"
-            day="numeric"
-            weekday="long"
-          />
-        </p>
-        <p>
-          Yesterday:<br/>
-          <FormattedRelative value={addDays(Date.now(), -1)}/>
+          Current Value: {this.props.value}
         </p>
 
         <p>

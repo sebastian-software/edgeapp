@@ -7,7 +7,7 @@ import Styles from "./Home.css"
 function Home({ intl }) {
   return (
     <article>
-      <Helmet title={intl.formatMessage({ id: "title" })} />
+      <Helmet title="Home" />
       <div className={Styles.preloader} />
       <p>
         Home Component

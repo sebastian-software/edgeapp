@@ -19,8 +19,7 @@ import Navigation from "components/Navigation"
 const HomeView = createLazyComponent({
   load: (language) => {
     return [
-      import("./views/Home/Home"),
-      import("./views/Home/Home." + language + ".json")
+      import("./views/Home/Home")
     ]
   }
 })
@@ -28,8 +27,16 @@ const HomeView = createLazyComponent({
 const AboutView = createLazyComponent({
   load: (language) => {
     return [
-      import("./views/About/About"),
-      import("./views/About/About." + language + ".json")
+      import("./views/About/About")
+    ]
+  }
+})
+
+const LocalizationView = createLazyComponent({
+  load: (language) => {
+    return [
+      import("./views/Localization/Localization"),
+      import("./views/Localization/messages/" + language + ".json")
     ]
   }
 })
@@ -51,6 +58,7 @@ function Root({ children, locale, language, intl }) {
         <Switch>
           <Route exact path="/" component={HomeView} />
           <Route path="/about" component={AboutView} />
+          <Route path="/localization" component={LocalizationView} />
           <Route component={MissingView}/>
         </Switch>
       </div>

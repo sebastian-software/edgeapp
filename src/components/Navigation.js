@@ -10,6 +10,7 @@ function Navigation({ intl }) {
     <ul className={Styles.list}>
       <li><NavLink exact to="/" activeClassName={Styles.activeLink}>Home</NavLink></li>
       <li><NavLink to="/about" activeClassName={Styles.activeLink}>About</NavLink></li>
+      <li><NavLink to="/localization" activeClassName={Styles.activeLink}>Localization</NavLink></li>
       <li><NavLink to="/missing" activeClassName={Styles.activeLink}>Missing</NavLink></li>
     </ul>
   )
