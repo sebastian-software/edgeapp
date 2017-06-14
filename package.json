@@ -58,7 +58,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "edgecss": "^0.4.10",
-    "edgestack": "^0.19.11",
+    "edgestack": "^0.19.12",
     "sanitize.css": "^5.0.0",
     "source-sans-pro": "^2.0.10"
   },

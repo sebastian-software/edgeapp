@@ -3156,9 +3156,9 @@ edgecss@^0.4.10:
     postcss-will-change "^2.0.0"
     postcss-zindex "^2.2.0"
 
-edgestack@^0.19.11:
-  version "0.19.11"
-  resolved "https://registry.yarnpkg.com/edgestack/-/edgestack-0.19.11.tgz#ee4d130b6688ba9c07aedaf23bc60e2f26fc3e0e"
+edgestack@^0.19.12:
+  version "0.19.12"
+  resolved "https://registry.yarnpkg.com/edgestack/-/edgestack-0.19.12.tgz#b4ee4e982265518af07f70a7dd4c2ed64e9505ea"
   dependencies:
     app-root-dir "^1.0.2"
     assets-webpack-plugin "^3.5.1"
