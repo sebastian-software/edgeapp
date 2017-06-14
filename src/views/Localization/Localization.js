@@ -6,6 +6,8 @@ import PropTypes from "prop-types"
 
 import Styles from "./Localization.css"
 
+const yesterday = addDays(Date.now(), -1)
+
 class Localization extends React.Component {
   render() {
     const { intl } = this.props
@@ -29,7 +31,7 @@ class Localization extends React.Component {
         </p>
         <p>
           Yesterday:<br/>
-          <FormattedRelative value={addDays(Date.now(), -1)}/>
+          <FormattedRelative value={yesterday}/>
         </p>
       </article>
     )
