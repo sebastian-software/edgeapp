@@ -36,11 +36,31 @@ exports[`Storyshots Navigation Site Navigation 1`] = `
   <li>
     <a
       className={undefined}
-      href="/about"
+      href="/redux"
       onClick={[Function]}
       style={undefined}
     >
-      About
+      Redux
+    </a>
+  </li>
+  <li>
+    <a
+      className={undefined}
+      href="/localization"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Localization
+    </a>
+  </li>
+  <li>
+    <a
+      className={undefined}
+      href="/markdown"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Markdown
     </a>
   </li>
   <li>
