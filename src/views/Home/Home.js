@@ -9,8 +9,8 @@ function Home({ intl }) {
     <article>
       <Helmet title="Home" />
       <div className={Styles.preloader} />
-      <p>
-        Home Component
+      <p className={Styles.intro}>
+        <a href="https://github.com/sebastian-software">Produced with ❤ by Sebastian Software</a>
       </p>
     </article>
   )

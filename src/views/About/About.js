@@ -6,7 +6,6 @@ import PropTypes from "prop-types"
 import Styles from "./About.css"
 import { getCounter, decrementCounter, incrementCounter, loadCounter } from "../../modules/Counter"
 
-import MarkdownTest from "../../components/Markdown.mdx"
 import "prismjs/themes/prism-tomorrow.css"
 
 /**
@@ -46,12 +45,6 @@ class About extends React.Component {
           <button className={Styles.button} onClick={this.props.handleIncrement}>Increment</button>
           &#160;
           <button className={Styles.button} onClick={handleOldMethodCall}>Deprecated Test</button>
-        </p>
-
-        <MarkdownTest value="Sebastian"/>
-
-        <p className={Styles.intro}>
-          <a href="https://github.com/sebastian-software">Produced with ❤ by Sebastian Software</a>
         </p>
       </article>
     )
