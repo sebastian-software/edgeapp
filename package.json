@@ -1,6 +1,6 @@
 {
   "name": "edgeapp",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Application template for working with EdgeStack",
   "main": "index.js",
   "scripts": {
