@@ -24,7 +24,7 @@ Promise
     ensureIntlSupport(window.APP_STATE.ssr.locale),
     ensureReactIntlSupport(window.APP_STATE.ssr.language)
   ])
-  .then((results) => {
+  .then(() => {
     apolloClient = createApolloClient({ initialState: window.APP_STATE })
 
     reduxStore = createReduxStore({

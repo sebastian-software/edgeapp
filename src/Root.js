@@ -5,13 +5,10 @@ import Styles from "./Root.css"
 
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-import { IntlProvider } from "react-intl"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
 
 import { getLocale, getLanguage, createLazyComponent } from "edgestack"
-
-import messages from "messages/en.json"
 
 import Header from "components/Header"
 import Navigation from "components/Navigation"
@@ -59,19 +56,17 @@ const MissingView = createLazyComponent({
 
 function Root({ children, locale, language, intl }) {
   return (
-    <IntlProvider locale={locale} messages={messages}>
-      <div className={Styles.container}>
-        <Header/>
-        <Navigation/>
-        <Switch>
-          <Route exact path="/" component={HomeView} />
-          <Route path="/redux" component={ReduxView} />
-          <Route path="/localization" component={LocalizationView} />
-          <Route path="/markdown" component={MarkdownView} />
-          <Route component={MissingView}/>
-        </Switch>
-      </div>
-    </IntlProvider>
+    <div className={Styles.container}>
+      <Header/>
+      <Navigation/>
+      <Switch>
+        <Route exact path="/" component={HomeView} />
+        <Route path="/redux" component={ReduxView} />
+        <Route path="/localization" component={LocalizationView} />
+        <Route path="/markdown" component={MarkdownView} />
+        <Route component={MissingView}/>
+      </Switch>
+    </div>
   )
 }
 
