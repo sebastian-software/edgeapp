@@ -42,7 +42,7 @@ function mockServerDelay() {
   return new Promise((resolve, reject) => {
     setTimeout(
       () => {
-        let value = 1000 + Math.round(Math.random() * 8999)
+        let value = Math.round(Math.random() * 99)
         console.log("Received counter:", value)
         resolve(value)
       },
