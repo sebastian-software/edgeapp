@@ -24,10 +24,10 @@ const HomeView = createLazyComponent({
   }
 })
 
-const AboutView = createLazyComponent({
+const ReduxView = createLazyComponent({
   load: () => {
     return [
-      import("./views/About/About")
+      import("./views/Redux/Redux")
     ]
   }
 })
@@ -65,7 +65,7 @@ function Root({ children, locale, language, intl }) {
         <Navigation/>
         <Switch>
           <Route exact path="/" component={HomeView} />
-          <Route path="/about" component={AboutView} />
+          <Route path="/redux" component={ReduxView} />
           <Route path="/localization" component={LocalizationView} />
           <Route path="/markdown" component={MarkdownView} />
           <Route component={MissingView}/>

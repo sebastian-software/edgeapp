@@ -1,5 +1,5 @@
 import React from "react"
-import { injectIntl, FormattedMessage } from "react-intl"
+import { injectIntl } from "react-intl"
 import { NavLink } from "react-router-dom"
 import PropTypes from "prop-types"
 
@@ -9,7 +9,7 @@ function Navigation({ intl }) {
   return (
     <ul className={Styles.list}>
       <li><NavLink exact to="/" activeClassName={Styles.activeLink}>Home</NavLink></li>
-      <li><NavLink to="/about" activeClassName={Styles.activeLink}>About</NavLink></li>
+      <li><NavLink to="/redux" activeClassName={Styles.activeLink}>Redux</NavLink></li>
       <li><NavLink to="/localization" activeClassName={Styles.activeLink}>Localization</NavLink></li>
       <li><NavLink to="/markdown" activeClassName={Styles.activeLink}>Markdown</NavLink></li>
       <li><NavLink to="/missing" activeClassName={Styles.activeLink}>Missing</NavLink></li>

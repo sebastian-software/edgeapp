@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
 
-import Styles from "./About.css"
+import Styles from "./Redux.css"
 import { getCounter, decrementCounter, incrementCounter, loadCounter } from "../../modules/Counter"
 
 import "prismjs/themes/prism-tomorrow.css"
@@ -33,7 +33,7 @@ class About extends React.Component {
   render() {
     return (
       <article>
-        <Helmet title="About" />
+        <Helmet title="Redux" />
 
         <p>
           Current Value: {this.props.value}
