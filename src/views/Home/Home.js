@@ -4,9 +4,6 @@ import PropTypes from "prop-types"
 
 import Styles from "./Home.css"
 
-import Tweets from "../../graphql/Tweets.gql"
-console.log("Loading GraphQL queries works:", Tweets.kind === "Document")
-
 function Home({ intl }) {
   return (
     <article>
