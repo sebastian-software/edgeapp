@@ -68,6 +68,8 @@ if (process.env.NODE_ENV === "development" && module.hot)
     renderApp(nextRoot, { apolloClient, reduxStore, messages })
   })
 
+  // TODO: Add HMR for message files.
+
   module.hot.accept("../State", () =>
   {
     const nextState = require("../State").default
