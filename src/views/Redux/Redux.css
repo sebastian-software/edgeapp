@@ -1,7 +1,6 @@
 @import "../../Common.css";
 
 .button{
-  box-sizing: border-box;
   margin-bottom: 12px;
   cursor: pointer;
   line-height: 1.1;
