@@ -58,6 +58,7 @@
   "homepage": "https://github.com/sebastian-software/edgeapp#readme",
   "dependencies": {
     "classnames": "^2.2.5",
+    "cookiesjs": "^1.4.2",
     "edgecss": "^0.4.10",
     "edgestack": "^0.19.12",
     "sanitize.css": "^5.0.0",
