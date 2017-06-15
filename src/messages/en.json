@@ -1,5 +1,4 @@
 {
   "app.title": "Edge App",
-  "app.description": "A boilerplate for your own application demonstrating the power of EdgeStack.",
-  "counter": "Counter: {value, number}"
+  "app.description": "A boilerplate for your own application demonstrating the power of EdgeStack."
 }

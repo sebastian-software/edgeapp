@@ -1,5 +1,4 @@
 {
   "app.title": "Edge App",
-  "app.description": "Eine App-Boilerplate um die Nutzung vom EdgeStack zu demonstrieren.",
-  "counter": "Zähler: {value, number}"
+  "app.description": "Eine App-Boilerplate um die Nutzung vom EdgeStack zu demonstrieren."
 }
