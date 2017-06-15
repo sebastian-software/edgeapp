@@ -1,5 +1,5 @@
 import {
-  ensureIntlSupport, ensureReactIntlSupport,
+  ensureIntlSupport, ensureReactIntlSupport, ensureMessages,
   createReduxStore, createRootReducer,
   createApolloClient,
   renderApp
@@ -18,13 +18,22 @@ import State from "State"
 
 let apolloClient
 let reduxStore
+let messages
+
+function getMessagesUrl(language) {
+  return require("!file-loader!../messages/" + language + ".json")
+}
 
 Promise
   .all([
     ensureIntlSupport(window.APP_STATE.ssr.locale),
-    ensureReactIntlSupport(window.APP_STATE.ssr.language)
+    ensureReactIntlSupport(window.APP_STATE.ssr.language),
+    ensureMessages(getMessagesUrl(window.APP_STATE.ssr.language))
   ])
-  .then(() => {
+  .then((results) => {
+    // Store messages in global variable
+    messages = results[2]
+
     apolloClient = createApolloClient({ initialState: window.APP_STATE })
 
     reduxStore = createReduxStore({
@@ -35,7 +44,7 @@ Promise
       apolloClient
     })
 
-    renderApp(Root, { apolloClient, reduxStore })
+    renderApp(Root, { apolloClient, reduxStore, messages })
   })
 
 
@@ -56,7 +65,7 @@ if (process.env.NODE_ENV === "development" && module.hot)
   module.hot.accept("../Root", () =>
   {
     const nextRoot = require("../Root").default
-    renderApp(nextRoot, { apolloClient, reduxStore })
+    renderApp(nextRoot, { apolloClient, reduxStore, messages })
   })
 
   module.hot.accept("../State", () =>
