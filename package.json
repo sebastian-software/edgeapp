@@ -14,7 +14,8 @@
     "release:major": "release-it --github.release --npm.publish --non-interactive --increment major",
     "storybook": "cross-env start-storybook -p 9001 -c .storybook",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "license": "licensee --errors"
   },
   "engines": {
     "node": ">=6.0.0",
