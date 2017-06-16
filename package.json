@@ -60,7 +60,7 @@
     "classnames": "^2.2.5",
     "cookiesjs": "^1.4.2",
     "edgecss": "^0.4.10",
-    "edgestack": "^0.19.12",
+    "edgestack": "https://github.com/sebastian-software/edgestack.git",
     "sanitize.css": "^5.0.0",
     "source-sans-pro": "^2.0.10"
   },

@@ -7,12 +7,70 @@ import React from "react"
 import { Switch, Route } from "react-router-dom"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
+import Loadable from "react-loadable"
 
 import { getLocale, getLanguage, createLazyComponent } from "edgestack"
 
 import Header from "components/Header"
 import Navigation from "components/Navigation"
 
+function Loader(props) {
+  if (props.isLoading) {
+    // While our other component is loading...
+    if (props.timedOut) {
+      // In case we've timed out loading our other component.
+      return <div>Loader timed out!</div>;
+    } else if (props.pastDelay) {
+      // Display a loading screen after a set delay.
+      return <div>Loading...</div>;
+    } else {
+      // Don't flash "Loading..." when we don't need to.
+      return null;
+    }
+  } else if (props.error) {
+    // If we aren't loading, maybe
+    return <div>Error! Component failed to load</div>;
+  } else {
+    // This case shouldn't happen... but we'll return null anyways.
+    return null;
+  }
+}
+
+const HomeView = Loadable({
+  loader: () => import("./views/Home/Home"),
+  loading: Loader
+})
+
+const ReduxView = Loadable({
+  loader: () => import("./views/Redux/Redux"),
+  loading: Loader
+})
+
+const MarkdownView = Loadable({
+  loader: () => import("./views/Markdown/Markdown"),
+  loading: Loader
+})
+
+const MissingView = Loadable({
+  loader: () => import("./views/Missing/Missing"),
+  loading: Loader
+})
+
+const LocalizationView = Loadable.Map({
+  loader: {
+    Component: () => import("./views/Localization/Localization"),
+    messages: () => import("./views/Localization/messages/" + "de" + ".json")
+  },
+  loading: Loader,
+  render(loaded, props) {
+    let Component = loaded.Component.default
+    let messages = loaded.messages
+    return <Component {...props} messages={messages}/>
+  }
+})
+
+
+/*
 const HomeView = createLazyComponent({
   load: () => {
     return [
@@ -53,6 +111,9 @@ const MissingView = createLazyComponent({
     ]
   }
 })
+*/
+
+
 
 function Root({ children, locale, language, intl }) {
   return (
